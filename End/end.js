@@ -6,10 +6,10 @@ const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 //CONVERTS string back to array
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 //MAX amount of scores to be displayed
-const MAX_HIGH_SCORES = 5;
+const MAX_HIGH_SCORES = 6;
 
 //TEXT CONTENT
 finalScore.innerText = mostRecentScore

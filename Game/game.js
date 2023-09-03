@@ -142,5 +142,5 @@ incrementScore = num => {
   scoreText.innerText = score;
 };
 
-// Start the game when the page loads
+// Start the game when page loads
 startGame();
