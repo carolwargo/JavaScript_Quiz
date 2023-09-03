@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!--LINK to style.css-->
+    <link rel="stylesheet" href="/style.css"/>
+    <!--TITLE-->
+    <title>Congrats!</title>  
+  </head>
+
+  <!--start BODY-->
+  <body>
+    <!--start PAGE CONTAINER-->
+    <div class="container">
+      <!--start MAIN CONTENT-->
+      <div id="end" class="flex-center flex-column">
+        <!--display FINAL SCORE-->
+        <h1 id="finalScore"></h1>
+        <!--start FORM (form-input-save button-)-->
+        <form>
+          <!--start INPUT DATA-->
+          <input
+            type="text"
+            name="playername"
+            id="playername"
+            placeholder="playername"
+          />
+          <!--end INPUT DATA-->
+          <!--start SUBMIT BUTTON save score onclick, enabled when Playername is entered-->
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+            disabled 
+            >
+            Save
+          </button>
+          <!--end SUBMIT BUTTON so save score onclick-->
+        </form>
+        <!--end FORM-->
+
+        <!--BUTTON choice 1: PLAY AGAIN-->
+         <a class="btn" href="/Game/game.html">Play Again</a>
+        <!--BUTTON choice 2: RETURN HOME-->
+        <a class="btn" href="/">Go Home</a>
+      </div>
+      <!--end MAIN-->
+    </div>
+    <!--end PAGE CONTAINER-->
+
+    <!--SCRIPT TAG LINKING end.js to end.html-->    
+   <script src="/End/end.js"></script>
+  </body>
+  <!--end BODY-->
+</html>
