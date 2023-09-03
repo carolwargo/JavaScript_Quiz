@@ -33,14 +33,7 @@ const questions = [
       choice4: "boolean",
       answer: 4
   },
-  {
-      question: "Inside which of the following HTML elements do we link JavaScript?",
-      choice1: "<javascript>",
-      choice2: "<script>",
-      choice3: "<js>",
-      choice4: "<script.src>",
-      answer: 2
-  },
+
   {
       question: "Which of the following is not a variable declaration in JavaScript?",
       choice1: "const",
@@ -80,7 +73,7 @@ const questions = [
 
 //CONSTANTS max pts allowed,10 points given for each correct answer
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 6;
 
 //RESETS counter, score and questions & makes CALL for NEW QUESTION (1st question)
 startGame = () => {
